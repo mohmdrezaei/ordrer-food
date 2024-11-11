@@ -2,6 +2,6 @@ export default function Home() {
   return (
    
 
-     <div>next-food</div>
+     <h1>next-food</h1>
   )
 }
