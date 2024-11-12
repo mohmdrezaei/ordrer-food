@@ -15,7 +15,7 @@ function Banner() {
         <Link href="/menu">See All</Link>
       </div>
       <div className={styles.right}>
-        <img src="/images/banner.png" alt="Food image"/>
+        <img src="/images/banner.png" alt="Food image" />
       </div>
     </div>
   );
