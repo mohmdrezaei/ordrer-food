@@ -1,7 +1,5 @@
-export default function Home() {
-  return (
-   
+import HomePage from "../components/templates/HomePage";
 
-     <h1>next-food</h1>
-  )
+export default function Home() {
+  return <HomePage/>
 }
