@@ -1,10 +1,10 @@
 import MenuPage from "../../components/templates/MenuPage";
 
-function index({data}) {
+function Menu({data}) {
   return <MenuPage data={data}/>
 }
 
-export default index
+export default Menu
 
 export async function getStaticProps(){
     const res = await fetch("http://localhost:4000/data")
