@@ -2,8 +2,7 @@ import React from "react";
 import CategoriesPage from "../../components/templates/CategoriesPage";
 
 function Categories({data}) {
-  console.log(data)
-  return <CategoriesPage />;
+  return <CategoriesPage data={data} />;
 }
 
 export default Categories;
@@ -26,6 +25,8 @@ export async function getServerSideProps(context) {
       const [timeDetail] = cookingTime.split(" ");
 
       if (time === "less" && timeDetail && +timeDetail <= 30) {
+        return detail;
+      } else if (time === "more" && +timeDetail > 30) {
         return detail;
       }
     });
