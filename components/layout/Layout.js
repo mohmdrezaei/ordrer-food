@@ -18,7 +18,7 @@ function Layout({ children }) {
       <div className={styles.container}>{children}</div>
 
       <footer className={styles.footer}>
-        <a href="/">Mohammad Rezaei</a>
+        <a>Mohammad Rezaei</a>
         Order Food Project with Next.js &copy;
       </footer>
     </>
