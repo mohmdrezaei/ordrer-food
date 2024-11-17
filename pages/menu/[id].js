@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { id } = context.params;
-  const res = await fetch(`http://localhost:4000/data/${id}`);
+  const res = await fetch(`${process.env.BASE_URL}/data/${id}`);
   const data = await res.json();
 
   if (!data.id) {
